@@ -57,9 +57,9 @@ Below is a detailed breakdown of category-leading SaaS issue and project trackin
 
 The open-source issue and project tracking ecosystem offers mature alternatives to closed-source SaaS offerings—from sleek modern kanban boards to full-featured classical ERP/ALM suites. 
 
-The repositories below are **ranked in descending order by GitHub star count**, equipped with direct social badges linking to each repository's stargazers.
+The repositories below are **ranked in descending order by GitHub Stars_Count**, equipped with direct social badges linking to each repository's stargazers.
 
-| 🏆 Project | 🌟 GitHub Stars Badge | 📜 License | 🛠️ Tech Stack | 💡 Focus & Key Architecture |
+| 🏆 Project | 🌟 GitHub_Stars_Badge | 📜 License | 🛠️ Tech Stack | 💡 Focus & Key Architecture |
 | :--- | :--- | :--- | :--- | :--- |
 | **[Plane](https://github.com/makeplane/plane)** | [![Plane Stars](https://img.shields.io/github/stars/makeplane/plane?style=social&color=white)](https://github.com/makeplane/plane/stargazers) | AGPL-3.0 | TypeScript, Python (Django), Next.js | Modern open-source Jira & Linear replacement. Delivers cycles (sprints), modules, triage, rich-text docs, and issue matrices with Kanban and Gantt views. |
 | **[Focalboard](https://github.com/mattermost-community/focalboard)** | [![Focalboard Stars](https://img.shields.io/github/stars/mattermost-community/focalboard?style=social&color=white)](https://github.com/mattermost-community/focalboard/stargazers) | AGPL-3.0 | Go, TypeScript, React | Multilingual Trello/Notion/Asana alternative developed by Mattermost. Provides Kanban boards, tables, galleries, and task management (*Note: standalone version unmaintained; best via Mattermost Boards plugin*). |
