@@ -1,0 +1,197 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360" fill="none">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="50%" stop-color="#0d1b2a"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+
+    <!-- Accent Gradients -->
+    <linearGradient id="primary-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+
+    <linearGradient id="card-grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <linearGradient id="card-grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#312e81" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#1e1b4b" stop-opacity="0.4"/>
+    </linearGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="card-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+
+    <filter id="glow-effect" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes float1 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+    }
+    @keyframes float2 {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(8px); }
+    }
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.25; transform: scale(1); }
+      50% { opacity: 0.45; transform: scale(1.08); }
+    }
+    @keyframes dashCycle {
+      0% { stroke-dashoffset: 60; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes pillHover {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(4px, -3px); }
+    }
+
+    .floating-card-1 {
+      animation: float1 6s ease-in-out infinite;
+      transform-origin: center;
+    }
+    .floating-card-2 {
+      animation: float2 7s ease-in-out infinite;
+      transform-origin: center;
+    }
+    .pulsing-mesh {
+      animation: pulseGlow 8s ease-in-out infinite;
+      transform-origin: 600px 180px;
+    }
+    .flow-line {
+      stroke-dasharray: 8 6;
+      animation: dashCycle 3s linear infinite;
+    }
+    .badge-float {
+      animation: pillHover 5s ease-in-out infinite;
+    }
+  </style>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="360" rx="16" fill="url(#bg-grad)"/>
+
+  <!-- Subtle Grid Pattern in Background -->
+  <g opacity="0.08" stroke="#ffffff" stroke-width="1">
+    <path d="M 0,60 L 1200,60 M 0,120 L 1200,120 M 0,180 L 1200,180 M 0,240 L 1200,240 M 0,300 L 1200,300" />
+    <path d="M 100,0 L 100,360 M 200,0 L 200,360 M 300,0 L 300,360 M 400,0 L 400,360 M 500,0 L 500,360 M 600,0 L 600,360 M 700,0 L 700,360 M 800,0 L 800,360 M 900,0 L 900,360 M 1000,0 L 1000,360 M 1100,0 L 1100,360" />
+  </g>
+
+  <!-- Dynamic Glowing Orbs in Background -->
+  <circle cx="200" cy="100" r="140" fill="#6366f1" opacity="0.12" filter="url(#glow-effect)" class="pulsing-mesh"/>
+  <circle cx="1020" cy="240" r="160" fill="#ec4899" opacity="0.1" filter="url(#glow-effect)" class="pulsing-mesh"/>
+  <circle cx="900" cy="80" r="100" fill="#06b6d4" opacity="0.1" filter="url(#glow-effect)" class="pulsing-mesh"/>
+
+  <!-- Dynamic Animated Connective Flow Line (Backdrop) -->
+  <path d="M 120,300 C 350,320 400,40 650,50 C 900,60 1000,280 1140,240" 
+        stroke="url(#primary-glow)" stroke-width="2.5" fill="none" opacity="0.3" class="flow-line" />
+
+  <!-- Dynamic Kanban Column Card 1 (Right Side Background Accents) -->
+  <g class="floating-card-1" opacity="0.85">
+    <rect x="880" y="60" width="260" height="230" rx="12" fill="url(#card-grad1)" stroke="#334155" stroke-width="1.5" filter="url(#card-shadow)"/>
+    <!-- Kanban Header -->
+    <rect x="895" y="78" width="85" height="18" rx="9" fill="#3b82f6" fill-opacity="0.2"/>
+    <text x="937" y="91" fill="#60a5fa" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="10" font-weight="600" text-anchor="middle">IN PROGRESS</text>
+    <circle cx="1115" cy="87" r="4" fill="#3b82f6"/>
+    
+    <!-- Mini Task Card 1 -->
+    <rect x="895" y="110" width="230" height="48" rx="8" fill="#1e293b" stroke="#475569" stroke-width="0.8"/>
+    <rect x="907" y="122" width="130" height="8" rx="4" fill="#cbd5e1" opacity="0.8"/>
+    <rect x="907" y="136" width="70" height="6" rx="3" fill="#64748b"/>
+    <rect x="1080" y="124" width="34" height="16" rx="8" fill="#ec4899" fill-opacity="0.2"/>
+    <text x="1097" y="135" fill="#f472b6" font-family="sans-serif" font-size="8" font-weight="bold" text-anchor="middle">P0</text>
+
+    <!-- Mini Task Card 2 -->
+    <rect x="895" y="168" width="230" height="48" rx="8" fill="#1e293b" stroke="#475569" stroke-width="0.8"/>
+    <rect x="907" y="180" width="150" height="8" rx="4" fill="#cbd5e1" opacity="0.8"/>
+    <rect x="907" y="194" width="90" height="6" rx="3" fill="#64748b"/>
+    <rect x="1080" y="182" width="34" height="16" rx="8" fill="#10b981" fill-opacity="0.2"/>
+    <text x="1097" y="193" fill="#34d399" font-family="sans-serif" font-size="8" font-weight="bold" text-anchor="middle">SPRINT</text>
+
+    <!-- Mini Task Card 3 -->
+    <rect x="895" y="226" width="230" height="48" rx="8" fill="#1e293b" stroke="#475569" stroke-width="0.8"/>
+    <rect x="907" y="238" width="110" height="8" rx="4" fill="#cbd5e1" opacity="0.8"/>
+    <rect x="907" y="252" width="60" height="6" rx="3" fill="#64748b"/>
+    <rect x="1080" y="240" width="34" height="16" rx="8" fill="#8b5cf6" fill-opacity="0.2"/>
+    <text x="1097" y="251" fill="#c084fc" font-family="sans-serif" font-size="8" font-weight="bold" text-anchor="middle">DOCS</text>
+  </g>
+
+  <!-- Left Dynamic Element: Agile Velocity Flow Badge -->
+  <g class="badge-float" opacity="0.85">
+    <rect x="60" y="275" width="200" height="42" rx="21" fill="#1e293b" stroke="#6366f1" stroke-width="1.2" filter="url(#card-shadow)"/>
+    <circle cx="82" cy="296" r="10" fill="#10b981" fill-opacity="0.2"/>
+    <circle cx="82" cy="296" r="4" fill="#10b981"/>
+    <text x="102" y="300" fill="#f8fafc" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="11" font-weight="600">Sprint Health: 99.4%</text>
+  </g>
+
+  <!-- Decorative Target & Issue Icon (Foreground Left) -->
+  <g transform="translate(68, 62)">
+    <rect width="64" height="64" rx="16" fill="url(#primary-glow)" filter="url(#card-shadow)"/>
+    <!-- Checklist / Issue Tracker Glyph -->
+    <path d="M 22,24 L 28,30 L 42,18" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 22,38 L 25,41 L 32,35" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="36" y1="41" x2="44" y2="41" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="22" y1="48" x2="44" y2="48" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  </g>
+
+  <!-- MAIN FOREGROUND TEXT (Crisp, High Contrast, Guaranteed Foreground) -->
+  <g transform="translate(150, 0)">
+    <!-- Pill Top Tag -->
+    <g transform="translate(0, 64)">
+      <rect x="0" y="0" width="250" height="26" rx="13" fill="#6366f1" fill-opacity="0.15" stroke="#6366f1" stroke-opacity="0.4" stroke-width="1"/>
+      <text x="12" y="17" fill="#a5b4fc" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="11" font-weight="700" letter-spacing="0.8">🚀 THE MODERN ISSUE TRACKING MATRIX</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="135" fill="#ffffff" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="36" font-weight="800" letter-spacing="-0.5">
+      Awesome Issue &amp; Project Tracking
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="172" fill="#94a3b8" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="16" font-weight="400">
+      A curated ecosystem of battle-tested SaaS platforms &amp; open-source alternatives
+    </text>
+
+    <!-- Subtitle 2: Tags & Capabilities -->
+    <text x="0" y="202" fill="#cbd5e1" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif" font-size="13" font-weight="500">
+      ⚡ Agile &amp; Scrum • 🎯 Sprint Planning • 🐛 Bug Tracking • 📦 Self-Hosted &amp; Cloud
+    </text>
+
+    <!-- Key Metrics / Feature Badges -->
+    <g transform="translate(0, 228)">
+      <!-- Badge 1: SaaS Leaders -->
+      <g>
+        <rect x="0" y="0" width="136" height="28" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+        <circle cx="14" cy="14" r="4" fill="#38bdf8"/>
+        <text x="26" y="18" fill="#e2e8f0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="11" font-weight="600">Top SaaS Suites</text>
+      </g>
+
+      <!-- Badge 2: Open Source -->
+      <g transform="translate(146, 0)">
+        <rect x="0" y="0" width="168" height="28" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+        <circle cx="14" cy="14" r="4" fill="#10b981"/>
+        <text x="26" y="18" fill="#e2e8f0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="11" font-weight="600">Open-Source Ranked</text>
+      </g>
+
+      <!-- Badge 3: Transparent Pricing -->
+      <g transform="translate(324, 0)">
+        <rect x="0" y="0" width="180" height="28" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+        <circle cx="14" cy="14" r="4" fill="#ec4899"/>
+        <text x="26" y="18" fill="#e2e8f0" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif" font-size="11" font-weight="600">Pricing &amp; Free Limits</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom Accent Line -->
+  <rect x="0" y="356" width="1200" height="4" fill="url(#primary-glow)"/>
+</svg>
