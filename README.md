@@ -4,11 +4,13 @@
 
 # 🚀 Awesome Issue & Project Tracking Software
 
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![Trackers](https://img.shields.io/badge/Tools-SaaS%20%26%20Open--Source-blue.svg?style=flat-square)](#table-of-contents)
 [![Last Updated](https://img.shields.io/badge/Updated-November%202026-brightgreen.svg?style=flat-square)](#)
 [![Contributions Welcome](https://img.shields.io/badge/Contributions-Welcome-orange.svg?style=flat-square)](#how-to-contribute)
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg?style=flat-square)](https://creativecommons.org/publicdomain/zero/1.0/)
+<a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
 **A comprehensive, curated index of premier SaaS platforms and top-starred open-source GitHub repositories for Agile Issue Tracking, Sprint Management, Bug Tracking, and Self-Hosted Workflows.**
 
@@ -22,6 +24,8 @@
 - [☁️ Top SaaS & Hosted Platforms](#️-top-saas--hosted-platforms)
 - [📦 Top Open-Source GitHub Projects](#-top-open-source-github-projects)
 - [🤝 How to Contribute](#-how-to-contribute)
+- [💖 Support](#-support)
+- [📈 Star History](#-star-history)
 - [⚖️ Disclaimer & Evaluation Guidelines](#️-disclaimer--evaluation-guidelines)
 
 ---
@@ -87,6 +91,21 @@ We welcome additions, corrections, and ecosystem updates from engineers and open
    - Include factual starting-tier pricing, exact free tier limitations, and verified GitHub star metrics.
 4. 🔍 **Verify Links & Data** to ensure URLs are canonical and markdown renders cleanly.
 5. 🚀 **Submit a Pull Request** with a concise description of your changes.
+
+## 💖 Support
+
+Thank you for visiting and using this curated directory! If you find this resource helpful for evaluating, choosing, or deploying issue tracking and project management tools, please consider supporting the project:
+
+- ⭐ **Star this repository** on GitHub to help others discover it.
+- 🍴 **Fork and contribute** by adding new tools, updating pricing tiers, or submitting corrections.
+- 📢 **Share with colleagues**, engineering managers, product leads, and communities.
+- ☕ **Sponsor the work**: You can buy me a coffee or become a recurring sponsor via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Issue-Project-Tracking-Software&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Issue-Project-Tracking-Software&type=date&legend=top-left)
 
 ---
 
